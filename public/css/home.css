@@ -116,6 +116,7 @@ nav a:nth-last-child(1){
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
     font-weight: bold;
 }
@@ -140,6 +141,7 @@ nav a:nth-last-child(1){
 
 .countdown{
     display: flex;
+    width: 100%;
     gap: 1rem;
     padding: 15px;
 }
@@ -250,5 +252,19 @@ nav a:nth-last-child(1){
         left: -100px;
         opacity: 0.5;
         visibility: hidden;
+    }
+}
+
+@media (max-width: 400px){
+    .title_container h1{
+        font-size: 50px;
+    }
+
+    .grande{
+        font-size: 5vh;
+    }
+
+    .banner{
+        max-width: 90%;
     }
 }
