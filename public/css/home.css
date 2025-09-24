@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sigmar&family=Tagesschrift&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+.background{
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    
+    /* z-index: 1; */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    height: 100%;
+    width: 100%;
+    /* z-index: 2; */
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content:end;
+    /* margin: 1px; */
+    margin-bottom: 0px;
+    max-width: 100%;
+    /* background-color: aliceblue; */
+    /* z-index: 3; */
+    background-color: blue;
+}
+
+nav h1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+    width: 40%;
+    font-size: 24px;
+    font-family: "Sigmar";
+    left: 0px;
+    color: white;
+}
+
+nav a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+    /* border-right: 1px solid; */
+    color: lightyellow;
+    /* background-color: blue; */
+    /*margin: 1px;*/
+    width: 15%;
+    height: 100%;
+    transition: transform 300ms ease-in-out;
+}
+
+nav a:hover{
+    z-index: 3;
+    transform: translateY(3px) scaleY(1.1);
+    
+    background-color: lightyellow;
+    color: blue;
+}
+
+nav a:nth-last-child(1){
+    border-right: none;
+}
+
+.banner_container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* z-index: 3; */
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    
+}
+
+.title_container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.title_container h1, h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.title_container h1{
+    font-size: 30vh;
+}
+
+.title_container h2{
+    font-size: 10vh;
+}
+
+#cuando{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    /* width: 100%; */
+    padding: 16%;
+    color: aliceblue;
+}
+
+.countdown{
+    display: flex;
+    gap: 1rem;
+    padding: 15px;
+}
+
+.grupo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grande{
+    /* border: 1px solid; */
+    /* border-radius: 50%; */
+    padding: 10px;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#fotos{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-inline: 50px;
+    padding-top: 50px;
+    
+}
+
+.image-container{
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.image-container p{
+    color: aliceblue;
+}
+
+#fotos img{
+    width: 30%;
+    height: 100%;
+    opacity: 0;
+}
+
+#fotos .derecha{
+    align-self: flex-end;
+    transition: all;
+}
+
+#fotos .izquierda{
+    
+    transition: all;
+}
+
+
+@keyframes apareceIzquierda {
+    0%{
+        left: -100px;
+        opacity: 0;
+    } 
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes desapareceIzquierda {
+    0%{
+        left: 0px;
+        opacity: 1;
+    }
+    100%{
+        left: -100px;
+        opacity: 0;
+    }
+}
+
+@keyframes apareceAbajo {
+    0%{
+        bottom: -100px;
+        opacity: 0;
+    } 
+    100%{
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes desapareceAbajo {
+    0%{
+        bottom: 0px;
+        opacity: 1;
+    }
+    100%{
+        bottom: -100px;
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes none {
+    0%{
+        left: 0px;
+        
+    }
+    100%{
+        left: -100px;
+        opacity: 0.5;
+        visibility: hidden;
+    }
+}
