@@ -1,4 +1,4 @@
-let fecha = new Date("11/21/2025");
+let fecha = new Date("11/24/2025");
 let msFecha = fecha.getTime();
 
 let dias = document.getElementById("dias");
