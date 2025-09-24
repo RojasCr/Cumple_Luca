@@ -141,7 +141,7 @@ nav a:nth-last-child(1){
 
 .countdown{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     gap: 1rem;
     padding: 15px;
 }
@@ -265,6 +265,6 @@ nav a:nth-last-child(1){
     }
 
     .banner{
-        max-width: 90%;
+        max-width: 100%;
     }
 }
