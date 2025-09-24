@@ -30,7 +30,7 @@ main{
     display: flex;
     flex-direction: column;
     position: relative; 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     /* z-index: 2; */
 }
@@ -72,7 +72,7 @@ nav a{
     /* background-color: blue; */
     /*margin: 1px;*/
     width: 15%;
-    height: 100%;
+    /* height: 100%; */
     transition: transform 300ms ease-in-out;
 }
 
@@ -135,6 +135,7 @@ nav a:nth-last-child(1){
     align-items: center;
     height: 100%;
     /* width: 100%; */
+    /* margin: 0px 50% 0 0; */
     padding: 16%;
     color: aliceblue;
 }
@@ -164,16 +165,17 @@ nav a:nth-last-child(1){
 #fotos{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /* height: 100%; */
     padding-inline: 50px;
     padding-top: 50px;
-    
+    padding-bottom: 2%;
 }
 
 .image-container{
     display: flex;
     align-items: center;
     gap: 55px;
+    padding-bottom: 14%;
 }
 
 .image-container p{
@@ -257,14 +259,56 @@ nav a:nth-last-child(1){
 
 @media (max-width: 400px){
     .title_container h1{
-        font-size: 50px;
+        font-size: 10vh;
+    }
+
+    .title_container h2{
+        font-size: 7vh;
+    }
+
+    /* nav{
+        gap: 5%
+    } */
+
+    nav a{
+        padding-inline: 10px;
+    }
+    
+    .banner{
+        max-width: 100%;
+    }
+
+    #cuando{
+        padding-top: 31%;
+        padding-bottom: 31%;
+    }
+    
+    .countdown{
+        flex-direction: column;
+
     }
 
     .grande{
         font-size: 5vh;
     }
 
-    .banner{
-        max-width: 100%;
+    #fotos{
+        flex-direction: column;
+        padding-inline: 1%;
+        padding-bottom: 5%;
+    }
+
+    .image-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #fotos img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #fotos> *:nth-child(even){
+        flex-direction: column-reverse;
     }
 }
