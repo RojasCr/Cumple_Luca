@@ -29,11 +29,16 @@ const comentar = async () => {
 const publicar = async() => {
     const response = await fetch("/publicar");
     const data = await response.json();
-    
-    let p = document.createElement("p");
-    p.innerText =`"${data.data}"`;
 
-    comentariosArea.appendChild(p)
+    const comentariosArray = data.data.split("\n")
+    console.log(comentariosArray)
+
+    comentariosArray.forEach(coment => {
+        let p = document.createElement("p");
+        p.innerText =`"${coment}"`;
+    
+        comentariosArea.appendChild(p)
+    });
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
