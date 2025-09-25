@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/home.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Document</title>
 </head>
 <body>
     <audio id="audioFotos" autoplay loop>
-        <source src="public/music/fotos.mp3" type="audio/mp3">
+        <source src="music/fotos.mp3" type="audio/mp3">
     </audio>
-    <img class="background" src="public/images/Fondo_azul.jfif" alt="">
+    <img class="background" src="images/Fondo_azul.jfif" alt="">
     <main>
         <nav class="barra">
             <h1>Mis 18</h1>
@@ -21,7 +21,7 @@
             <a href="#fotos">Fotos</a>
         </nav>
         <div class="banner_container">
-            <img class="banner" src="public/images/Cumple_Miriam.jpg" alt="">
+            <img class="banner" src="images/Cumple_Miriam.jpg" alt="">
             <div class="title_container">
                 <h1>Mis 18</h1>
                 <h2>Luca</h2>
@@ -51,29 +51,36 @@
         </div>
         <div id="fotos">
             <div class="image-container">
-                <img src="public/images/Foto_1.jpeg" id="Foto_1" class="izquierda fotos" alt="">
+                <img src="images/Foto_1.jpeg" id="Foto_1" class="izquierda fotos" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta sunt, iste ex labore molestiae rerum rem vero incidunt ipsam odio maiores facilis nisi corporis. Doloribus ipsum laudantium quo blanditiis.</p>
             </div>
             <div class="image-container">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta sunt, iste ex labore molestiae rerum rem vero incidunt ipsam odio maiores facilis nisi corporis. Doloribus ipsum laudantium quo blanditiis.</p>
-                <img src="public/images/Foto_2.jpeg" class="derecha fotos" alt="">
+                <img src="images/Foto_2.jpeg" class="derecha fotos" alt="">
             </div>
             <div class="image-container">
-                <img src="public/images/Foto_3.jpeg" class="izquierda fotos" alt="">
+                <img src="images/Foto_3.jpeg" class="izquierda fotos" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta sunt, iste ex labore molestiae rerum rem vero incidunt ipsam odio maiores facilis nisi corporis. Doloribus ipsum laudantium quo blanditiis.</p>
             </div>
             <div class="image-container">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta sunt, iste ex labore molestiae rerum rem vero incidunt ipsam odio maiores facilis nisi corporis. Doloribus ipsum laudantium quo blanditiis.</p>
-                <img src="public/images/Foto_4.jpeg" class="derecha fotos" alt="">
+                <img src="images/Foto_4.jpeg" class="derecha fotos" alt="">
             </div>
             <div class="image-container">
-                <img src="public/images/Foto_5.jpeg" class="izquierda fotos" alt="">
+                <img src="images/Foto_5.jpeg" class="izquierda fotos" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta sunt, iste ex labore molestiae rerum rem vero incidunt ipsam odio maiores facilis nisi corporis. Doloribus ipsum laudantium quo blanditiis.</p>
             </div>
         </div>
+        <div id="comentarios-container">
+            <h1>Mensajes</h1>
+            <div id="comentarios"></div>
+            <input id="msg" placeholder="Deja tu comentario"></input>
+            <button id="send">Comentar</button>
+        </div>
     </main>
 
-    <script src="public/js/efectos.js"></script>
-    <script src="public/js/countdown.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/comentarios.js"></script>
 </body>
 </html>
